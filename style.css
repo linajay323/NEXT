@@ -23,11 +23,31 @@ body {
     margin: 20px auto;
     text-align: center;
   }
+  .event-name{
+  display: inline-block;    
+  width: 100%;
+  margin: 20px auto;
+  text-align: center;
+  }
   .line-int-1{
     margin: 20px auto;
   }
   button {
     margin: 5px;
+  }
+  .blurb {
+    position: absolute;
+    right: 10%;
+    top: 35%;
+    width: 200px;
+    height: 400px;
+    border: 1px;
+    border-style: dashed;
+    text-align: center;
+  }
+  .blurb-box{
+    margin: 20px auto;
+    text-align: center;
   }
   .custom-btn {
     width: 130px;
@@ -73,9 +93,9 @@ body {
     width:0;
     background: #f0094a;
     box-shadow:
-     -1px -1px 5px 0px #fff,
-     7px 7px 20px 0px #0003,
-     4px 4px 5px 0px #0002;
+    -1px -1px 5px 0px #fff,
+    7px 7px 20px 0px #0003,
+    4px 4px 5px 0px #0002;
     transition:400ms ease all;
   }
   .btn-1:after{

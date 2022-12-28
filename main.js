@@ -1,3 +1,4 @@
+// navbar  active
 const toggleBtn = document.querySelector('.navbar_tooglebtn');
 const menu = document.querySelector('.navbar_menu');
 const icons = document.querySelector('.navbar_icons');
@@ -20,5 +21,53 @@ $(window).scroll(function() {
     $(".sideBanner").stop().animate({
     "top" : bannerTop
     }, 500);
-
 }).scroll();
+
+function changeBtnName1()  {
+    const btnElement = document.getElementById('btn1');
+    btnElement.innerText = 'UP';
+}
+function changeBtnName2()  {
+    const btnElement = document.getElementById('btn2');
+    btnElement.innerText = 'DOWN';
+}
+function changeBtnName3()  {
+    const btnElement = document.getElementById('btn3');
+    btnElement.innerText = 'UP';
+}
+function changeBtnName4()  {
+    const btnElement = document.getElementById('btn4');
+    btnElement.innerText = 'UP';
+}
+function changeBtnName5()  {
+    const btnElement = document.getElementById('btn5');
+    btnElement.innerText = 'UP';
+}
+function changeBtnName6()  {
+    const btnElement = document.getElementById('btn6');
+    btnElement.innerText = 'UP';
+}
+function changeBtnName7()  {
+    const btnElement = document.getElementById('btn7');
+    btnElement.innerText = 'UP';
+}
+function changeBtnName8()  {
+    const btnElement = document.getElementById('btn8');
+    btnElement.innerText = 'UP';
+}
+function changeBtnName9()  {
+    const btnElement = document.getElementById('btn9');
+    btnElement.innerText = 'UP';
+}
+function changeBtnName10()  {
+    const btnElement = document.getElementById('btn10');
+    btnElement.innerText = 'UP';
+}
+function changeBtnName11()  {
+    const btnElement = document.getElementById('btn11');
+    btnElement.innerText = 'UP';
+}
+function changeBtnName12()  {
+    const btnElement = document.getElementById('btn12');
+    btnElement.innerText = 'DOWN';
+}

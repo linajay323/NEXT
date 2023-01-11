@@ -1,51 +1,57 @@
+/* 구조적 */
 :root {
+  --color: #263343;
   --text-color: #f0f4f5;
+  --text-p: #353535;
   --background-color: #263343;
   --accent-color: #d49466;
+  --font-size: 13px;
+  --size-button: 60px;
   --font-family: "Cormorant Garamond", serif;
+  --font: 'Lato', sans-serif;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  list-style: none;
 }
 body {
-  margin: 0;
   background: #e0e5ec;
+  user-select:none;
   -webkit-user-select:none;
   -moz-user-select:none;
   -ms-user-select:none;
-  user-select:none
-}
+  }
 h1 {
-  margin: 20px 0;
   position: relative;
+  margin: 20px 0;
   text-align: center;
   color: #353535;
   font-size: 40px;
-  font-weight: 800;
   font-family: "Cormorant Garamond", serif;
   }
 p {
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  text-align: center;
-  font-size: 18px;
-  color: #676767;
   margin: 10px;
+  text-align: center;
+  color: #353535;
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;  
   }
 a {
-  text-decoration: none;
   text-align: center;
   color: #cecaca;
   }
 .navbar {
+  background-color: #263343;
   display: flex;
+  padding: 8px 12px;
   justify-content: space-between;
   align-items: center;
-  background-color: #263343;
-  padding: 8px 12px;
 }
 .navbar_menu {
   display: flex;
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
+  /* padding-left: 0; */
 }
 .navbar_menu li:hover {
   background-color: #d49466;
@@ -55,11 +61,8 @@ a {
   padding: 8px 12px;
 }
 .navbar_icons {
-  list-style: none;
-  color:var(--text-color);
   display: flex;
-  padding: 0;
-  margin: 0;
+  color:var(--text-color);
 }
 .navbar_icons li {
   padding: 8px 6px;
@@ -99,6 +102,7 @@ footer {
   padding-top: 20px;
   text-align: center;
   background-color:#263343;
+  font: var(--text-color);
 }
 .menu-2 {
   margin: 15px 0;
@@ -139,30 +143,32 @@ button {
                     4px 4px 5px 0px rgba(0,0,0,.1);
   outline: none;
 }
+/* 버튼 1번 (종목명) */
 .btn-1 {
   width: 130px;
   height: 40px;
   line-height: 42px;
   padding: 0;
   border: none;
+  font-size: 13px;
+  /* font-weight: bold; */
   text-align: center;
-  background: rgb(255,27,0);
-  background: linear-gradient(0deg, rgba(255,27,0,1) 0%, rgba(251,75,2,1) 100%);
+  background: var(--accent-color);
+  background: linear-gradient(0deg, #263343 0%, #183355 100%);
 }
 .btn-1:hover {
-  color: #f0094a;
+  color: var(--background-color);
   background: transparent;
   box-shadow:none;
 }
-.btn-1:before,
-.btn-1:after{
+.btn-1:before,.btn-1:after {
   content:'';
   position:absolute;
   top:0;
   right:0;
   height:2px;
   width:0;
-  background: #f0094a;
+  background: var(--background-color);
   box-shadow:
   -1px -1px 5px 0px #fff,
   7px 7px 20px 0px #0003,
@@ -180,18 +186,21 @@ button {
   width:100%;
   transition:800ms ease all;
 }
+
+/* 버튼 11 (클릭) */
 .btn-11 {
   border: none;
-  background: rgb(233, 33, 251);
-  background: linear-gradient(0deg, rgba(251,33,117,1) 0%, rgba(234,76,137,1) 100%);
+  background: #fb2376;
+  /* background: linear-gradient(0deg, rgba(251,33,117,1) 0%, rgba(234,76,137,1) 100%); */
   color: #fff;
   overflow: hidden;
   cursor: pointer;
+  font-size: 13px;
 }
-.btn-11:hover {
+/* .btn-11:hover {
   text-decoration: none;
   color: #fff;
-}
+} */
 .btn-11:before {
   position: absolute;
   content: '';
@@ -203,15 +212,17 @@ button {
   background-color: #fff;
   animation: shiny-btn1 3s ease-in-out infinite;
 }
-.btn-11:hover{
-  opacity: .7;
-}
+/* .btn-11:hover{
+  opacity: .;
+} */
 .btn-11:active{
   box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
               -4px -4px 6px 0 rgba(116, 125, 136, .2), 
-    inset -4px -4px 6px 0 rgba(255,255,255,.2),
-    inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+                inset -4px -4px 6px 0 rgba(255,255,255,.2),
+                inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
 }
+
+/* 버튼 16번 */
 .btn-16 {
   color: #353535;
   width: 129px;
@@ -291,7 +302,7 @@ button {
   }
   .navbar_tooglebtn {
   display: block;
-  top: 1.5%;
+  top: .5%;
   }
   .navbar_menu.active,
   .navbar_icons.active {

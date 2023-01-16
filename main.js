@@ -39,3 +39,4 @@ var button = document.getElementById("btn1");
 // function changeBtnName1()  {
 //     const btnElement = document.getElementById('btn1');
 //     btnElement.innerText = 'UP';
+

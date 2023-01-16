@@ -11,34 +11,41 @@
     <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.js"></script>
 </head>
 <body>
-    <!-- header/nav/ -->
+    <!-- header -->
     <header class="frame">
         <nav class="navbar">
+            <!-- nav list -->
             <ul class="navbar_menu">
                 <li><a href="">HOME</a></li>
+                <li><a href="https://nextupdown.com/hlb/" rel="noopener noreferrer" target="_blank">임상시험/공매도</a></li>
+                <li><a href="premium.html" rel="noopener noreferrer">PREMIUM</a></li>
             </ul>
+            <!-- nav icon -->
             <ul class="navbar_icons">
                 <li>
-                    <a href="https://www.youtube.com/channel/UCNRQbg-z4YqJ2HGvCBtwDyA" rel="noopener noreferrer" target="_blank" >
-                        <img src="/img/Y.png" alt="YouTube"></a>
+                    <a href="https://www.youtube.com/" rel="noopener noreferrer" target="_blank" >
+                    <img src="img/Y.png" alt="YouTube"></a>
                 </li>
             </ul>
             <a href="#" class="navbar_tooglebtn">
                 <i class="fa-solid fa-bars"></i>
             </a>
         </nav>
-
-        <h1>NEXT PRICE</h1>
-        <p>내일주가 UPDOWN을 확인하세요!</p>
-        <div class="menu-2">
-            <span class="custom-btn btn-16">종목명</span>
-            <span class="custom-btn btn-16">클릭</span>
-        </div>
-
-    </header>
+    </header>   
     <!-- section -->
+    <section>
+        <header class="frame">
+            <h1>NEXT PRICE</h1>
+            <!-- <p>내일주가 UPDOWN을 확인하세요!</p> -->
+            <div class="menu-2">
+                <span class="custom-btn btn-16">종목명</span>
+                <span class="custom-btn btn-16">클릭</span>
+            </div>
+        </header>
+        <!-- 종목 버튼 -->
+    </section>    
     <section class="event-name">
-        <div class="line-int">
+        <aside class="line-int">
             <span class="custom-btn btn-1">셀트리온헬스케어</span>
             <button class="custom-btn btn-11" id="btn1">Click</button>
 
@@ -68,22 +75,35 @@
 
             <span class="custom-btn btn-1">리노공업</span>
             <button class="custom-btn btn-11" id="btn1">Click</button>
-        </div>
-        <!-- 쿠팡파트너스 광고 -->
-        <aside class="sideBanner">
-            <iframe class="txt-label" 
-            src="https://ads-partners.coupang.com/widgets.html?id=625000&template=carousel&trackingCode=AF0425998&subId=&width=200&height=500" 
-            frameborder="0" 
-            scrolling="no" 
-            referrerpolicy="unsafe-url"></iframe>     
         </aside>
+        <!-- 쿠팡파트너스 광고 -->
+        <!-- 세로 -->
+        <!-- <aside class="sideBanner">
+            <iframe class="txt-label" 
+            src="https://ads-partners.coupang.com/widgets.html?id=625000&template=carousel&trackingCode=AF0425998&subId=&width=200&height=500" frameborder="0" scrolling="no" referrerpolicy="unsafe-url"></iframe> -->
+        <!-- 가로 -->
+        <aside class="sideBanner">
+            <iframe class="txt-label"
+            src="https://ads-partners.coupang.com/widgets.html?id=625000&template=carousel&trackingCode=AF0425998&subId=&width=400&height=200" width="400" height="200" frameborder="0" scrolling="no" referrerpolicy="unsafe-url"></iframe>
+        </aside>        
     </section>
+    
     <!-- footer -->
     <footer>
-        <div class="foot-email">
-            <a href="mailto:maximumjuju.com">메일보내기</a>        
+        <div class="footer-inner">
+            <div class="foot-text">
+                <a href="mailto:maximumjuju.com">의견보내기</a>
+                <span class="stick">|</span>
+                <a href="">이용약관</a>
+                <br>
+                <a href="">개인정보처리방침</a>
+                <span class="stick">|</span>
+                <a href="">청소년보호정책</a>                
+            <br>
+                <a class="site-add" href="">www.maximumjuju.com</a>        
+            </div>
+            <a id="scrollUp" href="#top" title=""></a>
         </div>
-        <a id="scrollUp" href="#top" title="" style="position: fixed"></a>
     </footer>
 </body>
 </html>

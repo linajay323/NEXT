@@ -1,6 +1,5 @@
 /* 구조적 */
 :root {
-  --color: #263343;
   --text-color: #f0f4f5;
   --text-p: #353535;
   --background-color: #263343;
@@ -17,7 +16,7 @@
   padding: 0px;
   text-decoration: none;
   list-style: none;
- }
+}
 body {
   background: #e0e5ec;
   user-select:none;
@@ -52,19 +51,22 @@ footer {
   width: auto;
   height: 60px;
   padding: 10px;
+  margin-top: 15px;
+  overflow: hidden;
 }
 
 /* ID 선언*/
 #scrollUp {
-  /* background-color: var(--background-color); */
+  background-color:#263343;
   background-image:url(img/H.png);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   width: 42px;
   height: 42px;
   border-radius: 3px;
+  /* border: 0px solid var(--color); */
   bottom: 17px;
-  right: 20px;
+  right: 16px;
   opacity: 0.7;  
   position: fixed;
 }
@@ -112,15 +114,11 @@ footer {
   color: #ccc;
   margin: 0px 4px;
 }
-.footer-inner {
-  /* border: 1px solid #EE137B; */
-  height: auto; 
-}
 .foot-text {
-  /* background-color:#d49466 ; */
-  height: 60px;
-  padding-top: 4px;
-  font-size: 12px;
+  /* border: 1px solid #EE137B; */
+  height: 40px;
+  padding-top: 20px;
+  font-size: 11px;
   text-align: center;
   font-weight: lighter;
   font-family:var(--font);
@@ -160,7 +158,15 @@ footer {
                     7px 7px 20px 0px rgba(0,0,0,.1),
                     4px 4px 5px 0px rgba(0,0,0,.1);
   outline: none;
+  cursor: pointer;
+  cursor: pointer;
+  appearance: none;
+  border: none;
 }
+.custom-btn:focus {
+  outline: none;
+}
+
 /* 버튼 1번 (종목명) */
 .btn-1 {
   line-height: 42px;
@@ -219,12 +225,24 @@ footer {
   background-color: #fff;
   animation: shiny-btn1 3s ease-in-out infinite;
 }
-.btn-11:active{
+.btn-11:active {
   box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
               -4px -4px 6px 0 rgba(116, 125, 136, .2), 
         inset -4px -4px 6px 0 rgba(255,255,255,.2),
         inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+        
+  background: linear-gradient(
+    to right,
+    /* #ffffffe6, */
+    #EE137B,   
+    /* #f1639ee6, */
+    /* #5fc3e4e6, */
+    #ffffffe6,
+    #EE137B
+  );
 }
+
+
 /* 버튼 16번 (목록) */
 .btn-16 {
   color: #353535;
@@ -248,7 +266,8 @@ footer {
 /* 쿠팡광고 */
 .sideBanner {
   /* background-color:#9caec7; */
- }
+  margin-top: 10px;
+}
 .txt-label {
   width: 280px;
   height: 170px;
@@ -274,9 +293,6 @@ footer {
   height: auto;
   margin-left: -7px;
 }
-.site-add {
-  font-size: 14px;
-}
 
 /* 미디어쿼리 */
 @media screen and (max-width:768px) {
@@ -284,7 +300,7 @@ footer {
   margin: 15px 0;
   margin-bottom: -15px;
   }
- .sideBanner {
+  .sideBanner {
   background-color:#E0E5EC;
   top: 22%;  
   color:#fff;
@@ -329,11 +345,7 @@ footer {
   display:inline-block;
   }
   .foot-text {
-    /* background-color:#852c2c; */
-    padding-top: 0px;
-    width: 300px;
-    text-align: center;
-    margin: auto;
+    /* background-color:#24888b; */
   }
 
 }

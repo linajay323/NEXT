@@ -26,7 +26,7 @@ $(window).scroll(function() {
 // 버튼 클릭시 배경색상 변경
 var button = document.getElementById("btn1");
     button.addEventListener("click", function() {
-    this.style.backgroundColor = "#FF0000";
+    this.style.backgroundColor = "#c40d0d";
 });
 
 // 버튼 클릭시 텍스트 변경

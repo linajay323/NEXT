@@ -1,19 +1,13 @@
 /* 구조적 */
 :root {
   --text-color: #f0f4f5;
-  --text-color1: #353535;
+  --text-p: #353535;
   --background-color: #263343;
-  --background-color1: #c3cfdf;
   --accent-color: #d49466;
-  --accent-color1: #263343;
   --font-size: 13px;
   --size-button: 60px;
-  /* --font-family: "Cormorant Garamond", serif;
-  --font: 'Lato', sans-serif; */
-}
-@font-face {
-  src: url(/fonts/Noto_Sans/NotoSans-Light.ttf);
-  font-family: 'Noto_Sans';
+  --font-family: "Cormorant Garamond", serif;
+  --font: 'Lato', sans-serif;
 }
 
 /* TAG 선언 */
@@ -30,22 +24,21 @@ body {
   -moz-user-select:none;
   -ms-user-select:none;
 }
-/* h1 {
+h1 {
   position: relative;
-  margin: 20px 0px 0px 0px;
+  margin: 20px 0;
   text-align: center;
   color: #353535;
   font-size: 40px;
   font-family: "Cormorant Garamond", serif;
-} */
+}
 p {
-  margin: 12px;
+  margin: 10px;
   text-align: center;
   color: #353535;
   font-size: 16px;
-  font-family: 'Noto_Sans';
+  font-family: 'Lato', sans-serif;  
 }
-
 a {
   text-align: center;
   color:#ccc;
@@ -64,12 +57,14 @@ footer {
 
 /* ID 선언*/
 #scrollUp {
+  background-color:#263343;
   background-image:url(img/H.png);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   width: 42px;
   height: 42px;
   border-radius: 3px;
+  /* border: 0px solid var(--color); */
   bottom: 17px;
   right: 16px;
   opacity: 0.7;  
@@ -86,18 +81,7 @@ footer {
 }
 .navbar_menu {
   display: flex;
-  margin-left: 50px;
 }
-.navbar_menu a {
- opacity: 0.95;
- /* border: 1px solid burlywood;
- padding: 10px;
- border-radius: 5px; */
-}
-.navbar_menu a:hover {
- color:#263343;
-
- }
 .navbar_menu li:hover {
   background-color: #d49466;
   border-radius: 4px;
@@ -115,25 +99,20 @@ footer {
 .navbar_icons li {
   padding: 8px 6px;
 }
-.navbar_iconslogo a {
-
-}
 .navbar_tooglebtn {
   display: none;
   position: absolute;
   right: 32px;
   top: 10px;
   font-size: 24px;
-  color:#d49466;
-  /* color: #c4cbd2; */
+  color: #d49466;
 }
 .navbar_icons img {
   width: 34px;  
 }
 .stick {
+  color: #ccc;
   margin: 0px 4px;
-  opacity: 0.5;
-  color: #c3cfdf;
 }
 .foot-text {
   /* border: 1px solid #EE137B; */
@@ -141,30 +120,13 @@ footer {
   padding-top: 20px;
   font-size: 11px;
   text-align: center;
-}
-.foot-text a {
-  /* color:#353535; */
+  font-weight: lighter;
+  font-family:var(--font);
+  color:#ccc;
 }
 .menu-2 {
   margin: 15px 0;
 }
-.navbar_iconslogo img {
-  width: 34px;
-  display: block;
-  margin: 0px;
-}
-.navbar_iconslogo {
-  display: flex;
-  position: absolute;
-  justify-content: space-between;
-  align-items: center;
-  left: 22px;
-}
-.navbar_iconslogo li {
-  padding: 8px 0px;
-}
-
-
 .blurb {
   position: absolute;
   width: 200px;
@@ -183,15 +145,16 @@ footer {
 .custom-btn {
   width: 130px;
   height: 40px;
-  color:#cad6e5;
+  color:#ccc;
   border-radius: 5px;
-  font-family: 'Noto_Sans';
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
   background: transparent;
   /* cursor: pointer; */
   transition: all 0.3s ease;
   position: relative;
   display: inline-block;
-  box-shadow:inset 3px 3px 3px 0px rgba(255, 255, 255, 0.5),
+  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
                     7px 7px 20px 0px rgba(0,0,0,.1),
                     4px 4px 5px 0px rgba(0,0,0,.1);
   outline: none;
@@ -202,18 +165,6 @@ footer {
 }
 .custom-btn:focus {
   outline: none;
-}
-.day-main {
-  /* border: 1px solid #000; */
- 
-}
-.day-suc {
-  /* background-color: #df2929;
-  width: 270px; */
-  /* margin: auto; */
-  color:#263343;
-  font-size: 25px;
-  font-weight: lighter;            
 }
 
 /* 버튼 1번 (종목명) */
@@ -237,7 +188,7 @@ footer {
   right:0;
   height:2px;
   width:0;
-  background:#263343;
+  background: var(--background-color);
   box-shadow:-1px -1px 5px 0px #fff,
               7px 7px 20px 0px #0003,
               4px 4px 5px 0px #0002;
@@ -253,14 +204,14 @@ footer {
   width:100%;
   transition:800ms ease all;
 }
-
 /* 버튼 11 (클릭) */
 .btn-11 {
   border: none;
-  background: #ee137b;
-  color: rgb(237, 237, 237);
+  background: #EE137B;
+  color: #fff;
   overflow: hidden;
-  font-size: 16px;
+  cursor: pointer;
+  font-size: 15px;
   /* font-weight: 600; */
 }
 .btn-11:before {
@@ -282,9 +233,12 @@ footer {
         
   background: linear-gradient(
     to right,
+    /* #ffffffe6, */
+    #EE137B,   
+    /* #f1639ee6, */
+    /* #5fc3e4e6, */
     #ffffffe6,
-    #4d6178,
-    #ffffffe6
+    #EE137B
   );
 }
 
@@ -292,6 +246,7 @@ footer {
 /* 버튼 16번 (목록) */
 .btn-16 {
   color: #353535;
+  width: 129px;
   line-height: 38px;
   padding: 0;
   border: none;
@@ -302,13 +257,11 @@ footer {
   text-align: center;
 } 
 .event-name { 
- /* background-color: #d49466; */
- text-align: center;
+  text-align: center;
 }
 .line-int {
-  /* border: 1px solid #EE137B; */
-  width: 300px;
-  margin: auto;
+  width: 400px;
+  display: inline-block;
 }
 /* 쿠팡광고 */
 .sideBanner {
@@ -344,6 +297,7 @@ footer {
 /* 미디어쿼리 */
 @media screen and (max-width:768px) {
   .menu-2 {
+  margin: 15px 0;
   margin-bottom: -15px;
   }
   .sideBanner {
@@ -353,33 +307,21 @@ footer {
   }
   .navbar {
   flex-direction: column;
+  align-items: flex-start;
   padding-top: 50px;
+  }
+  .navbar_logo a {
+  color:#263343;
   }
   .navbar_menu {
   display: none;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  margin-left: 0px;
   }
   .navbar_menu li {
   width: 100%;
   text-align: center;
-  }
-  .navbar_iconslogo {
-    top: 3px;
-    left: 30px;
-    width: 53%;
-  }
- 
-  .navbar_iconslogo a {
-    opacity: 0.4;
-    /* background-color: #30af0d; */
-  }
-  .navbar_iconslogo img {
-    display: block;
-    opacity: 0.8;
-    margin: 0px;
   }
   .navbar_icons {
   display: none;
@@ -388,20 +330,22 @@ footer {
   }
   .navbar_tooglebtn {
   display: block;
-  
   }
-  .navbar_menu.active, 
+  .navbar_menu.active,
   .navbar_icons.active {
   display: flex;
   }
   .event-name{
-  margin: 15px 0px 5px 0px;
+  display: block;    
+  width: 100%;
+  margin: 25px auto 5px auto;
+  text-align: center;
   }
   .line-int {
- 
+  display:inline-block;
   }
   .foot-text {
-  
+    /* background-color:#24888b; */
   }
 
 }

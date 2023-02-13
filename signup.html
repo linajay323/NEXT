@@ -56,43 +56,44 @@
     </section>
     <!-- section2 -->  
     <section>
-        <!-- form -->
-        <form name="loginform" action="${cpath}/signin.do" method="post">
-        <!-- form-group1 -->
-        <form action="/create">
-            <div>
+        <!-- form-group -->
+        <form class="form-group" action="/create">
+            <div class="ma_username">
                 <label for="username">이름</label>
                 <input type="text" name="username">
             </div>
-            <div>
+            <div class="ma_userid">
                 <label for="userid">아이디</label>
                 <input type="text" name="userid">
-                <input type="submit" value="중복확인">
+                <div class="ma_userid_check">
+                    <input type="submit" value="중복확인">
+                </div>
+                
             </div>
-            <div>
+            <div class="ma_password">
                 <label for="password">비밀번호</label>
                 <input type="password" name="password">
             </div>
-            <div>
+            <div class="ma_passwordcheck">
                 <label for="passwordcheck">비밀번호 확인</label>
                 <input type="passwordcheck" name="passwordcheck">
             </div>
-            <div>
+            <div class="ma_useremail">
                 <label for="useremail">이메일</label>
                 <input type="email" name="useremail">
             </div>
-            <div>
+            <div class="ma_garee">
                 <label for="agreceive">수신동의</label>               
                 <input type="radio" id="ag1" name="yes" checked="checked">
                 <label for="ag1" name="yes" >예</label>                
-                <input type="radio" id="ag1" name="yes" checked="">
+                <input type="radio" id="ag1" name="yes" >
                 <label for="ag2" name="yes" >아니오</label>                
             </div>    
-            <div>
-                <input type="submit" value="회원가입">
-                <input type="submit" value="취소">
+            <div class="ma_sign">
+                <input class="ma_signup" type="submit" value="회원가입">
+                <input class="ma_sign_can" type="submit" value="취소">
             </div> 
-        </form>  
+        </form>
     </section>
     <!-- footer -->
     <footer>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>내일주가</title>
+    <link rel="stylesheet" type="text/css" href="signupstyle.css">
+    <script src="https://kit.fontawesome.com/46fd571b02.js" crossorigin="anonymous"></script>
+    <script src="main.js" defer></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.js"></script>
+</head>
+<body>
+    <!-- header -->
+    <header class="frame">
+        <!-- navbar-->
+        <nav class="navbar">
+            <!-- navbar_logo -->
+            <ul class="navbar_iconslogo">
+                <li>
+                    <a href="index.html" rel="noopener noreferrer"><img src="img/NP.png" alt="logo"></a>                    
+                </li>
+            </ul>
+            <!-- navbar_menu -->
+            <ul class="navbar_menu">
+                <li><a href="">투자정보</a>
+                    <ul class="sub-menu1">
+                        <li><a href="#">임상시험</a></li>
+                        <li><a href="#">공매도</a></li>
+                    </ul>
+                </li>
+                <li><a href="" rel="noopener noreferrer">PREMIUM</a></li>
+                <li><a href="">예측정확도</a>
+                    <ul class="sub-menu2">
+                        <li><a href="#">확률/통계</a></li>
+                        <li><a href="#">소개</a></li>
+                    </ul>
+                </li>
+                <li><a href="">사용법</a></li>                
+            </ul>
+            <!-- navbar_icons-->
+            <ul class="navbar_icons">
+                <!-- <li><a class="login" href="#" rel="noopener noreferrer">로그인</a></li> -->
+            </ul>
+            <!-- navbar_tooglebtn : hamburger -->            
+            <a class="navbar_tooglebtn" href="#">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+        </nav>
+    </header>   
+    <!-- section1 -->
+    <section>
+        <div class="day-suc">
+            <h1>회원가입</h1>     
+        </div>
+    </section>
+    <!-- section2 -->  
+    <section>
+        <!-- form -->
+        <form name="loginform" action="${cpath}/signin.do" method="post">
+        <!-- form-group1 -->
+        <form action="/create">
+            <div>
+                <label for="username">이름</label>
+                <input type="text" name="username">
+            </div>
+            <div>
+                <label for="userid">아이디</label>
+                <input type="text" name="userid">
+                <input type="submit" value="중복확인">
+            </div>
+            <div>
+                <label for="password">비밀번호</label>
+                <input type="password" name="password">
+            </div>
+            <div>
+                <label for="passwordcheck">비밀번호 확인</label>
+                <input type="passwordcheck" name="passwordcheck">
+            </div>
+            <div>
+                <label for="useremail">이메일</label>
+                <input type="email" name="useremail">
+            </div>
+            <div>
+                <label for="agreceive">수신동의</label>               
+                <input type="radio" id="ag1" name="yes" checked="checked">
+                <label for="ag1" name="yes" >예</label>                
+                <input type="radio" id="ag1" name="yes" checked="">
+                <label for="ag2" name="yes" >아니오</label>                
+            </div>    
+            <div>
+                <input type="submit" value="회원가입">
+                <input type="submit" value="취소">
+            </div> 
+        </form>  
+    </section>
+    <!-- footer -->
+    <footer>
+        <div class="foot-text">
+            <a>© 2023 NEXTUPDOWN. All Rights Reserved.</a>
+        </div>                
+        <a id="scrollUp" href="#top" title=""></a>
+    </footer>
+</body>
+</html>

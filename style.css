@@ -37,6 +37,9 @@ p {
   font-family: 'Noto_Sans';
 }
 a {
+
+}
+nav a {
   text-align: center;
   color:#ccc;
 }
@@ -150,11 +153,11 @@ li:hover > .sub-menu2 {
 /* 시작 : section2  */
 .event-name { 
   /* background-color: #d49466; */
-   text-align: center;
-   margin: 20px auto;
-   margin-bottom: 90px;
- }
- .line-int {
+  text-align: center;
+  margin: 20px auto;
+  margin-bottom: 90px;
+}
+.line-int {
   /* border: 1px solid #EE137B; */
   width: 300px;
   margin: auto;
@@ -290,6 +293,7 @@ footer {
 }
 .foot-text a {
   /* border: 1px solid #EE137B; */
+  color:#ccc;
 }
 #scrollUp {
   background-image:url(img/H.png);
